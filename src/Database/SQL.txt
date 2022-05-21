@@ -1,0 +1,9 @@
+SQL (Structured Query Language) est un langage de programmation spécifique à un domaine conçu pour gérer
+des données dans des tables. Il a été développé dans les années 1970, et à ce jour, les interfaces de type
+ SQL sont très populaires dans les systèmes de gestion de données non seulement basés sur des tables !
+
+ SQL est un langage utilisé pour extraire et mettre à jour des données structurées sous forme de tables.
+ Comme par exemple Excel, les base de données relationnelles...
+
+ Les tableaux contiennent des lignes et des colonnes. Chaque ligne est un objet ou une entité qui possède un
+ ensemble de propriétés ou d'attributs.

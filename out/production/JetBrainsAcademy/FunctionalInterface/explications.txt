@@ -1,0 +1,15 @@
+   Les interfaces fonctionnelles font que les expressions lambda, les méthod references et d'autres
+      éléments de la programmation fonctionnelle fonctionne en Java
+
+      Une interface fonctionnelle est une interface qui contient une seule méthode abstraite
+      Les interfaces fonctionnelles peuvent être implémentées avec l'héritage, par une classe anonyme
+      mais également en utilisant une expression lambda et une méthod référence.
+
+      Les méthodes statiques et les méthodes sont autorisées dans une interface fonctionnelle
+
+
+      The code that creates a lambda expression may look as if the object of an interface type is created.
+      As you know, it is impossible. Actually, the Java compiler automatically creates a special intermediate
+       class that implements the functional interface and then creates an object of this class rather than
+        an object of an interface type. The name of such a class may look
+        like Functions$$Lambda$14/0x0000000100066840 or something similar.

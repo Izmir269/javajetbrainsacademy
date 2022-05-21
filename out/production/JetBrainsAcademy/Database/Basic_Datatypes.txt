@@ -1,0 +1,24 @@
+- basic subset of data types: INTEGER, FLOAT, DECIMAL, VARCHAR, and BOOLEAN.
+
+- SQL supports a special data type for such values – DECIMAL(precision, scale).
+
+This type has two parameters: precision and scale.
+
+Scale is the count of digits to the right of the decimal point. = nombre de chiffres après la virgule
+
+Precision is the total count of digits in the number. = nombre de chiffres avant + nombres aprè la virgule
+
+- By the way, sometimes in SQL you can encounter the REAL data type. And so REAL is FLOAT(24), or FLOAT of
+certain accuracy.
+
+- SQL supports a family of data types designed to represent text data. Let's consider one of them, quite
+universal and basic one – VARCHAR(n).
+
+CREATE TABLE census (
+    id INTEGER,
+    name VARCHAR(20),
+    birth_place_latitude REAL,
+    year_income DECIMAL(20,3),
+    is_parent BOOLEAN
+);
+https://www.w3schools.com/sql/sql_datatypes.asp => Tous les types possibles

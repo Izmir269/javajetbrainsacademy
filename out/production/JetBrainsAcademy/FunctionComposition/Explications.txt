@@ -1,0 +1,10 @@
+C'est un mécanisme de combinaison de fonctions pour obtenir des fonctions plus compliquées qui vient à
+l'origine des mathématiques. En un sens, il peut être considéré comme un design pattern dans la
+programmation fonctionnelle. Vous pouvez utiliser ce modèle pour composer des fonctions standards,
+des opérateurs, des prédicats et des consummers (mais pas des suppliers)
+
+
+1) Composer des Function<T,R>
+
+L'interface Function<T,R> a deux méthodes par défaut : compose et andThen pour composer des nouvelles fonctions.
+La différence principale entre les deux fonctions est l'ordre d'exécution
