@@ -1,0 +1,23 @@
+Les opérations intermédiaires courantes :
+
+- filter : renvoie un nouveau Stream qui inclue les élements qui match un prédicat
+- limit :  renvoie un nouveau stream qui consiste aux premiers n elements du stream
+- skip : renvoie un nouveau stream sans les premiers n elements du stream
+- distinct : renvoie un nouveau stream qui consiste à seulement les éléments uniques en se basant sur le equals
+- sorted : renvoie un nouveau stream qui inclue les éléments triés en se basant sur l'ordre naturel du comparateur donné
+- peek : returns the same stream of elements but allows observing the current elements of the stream for debugging;
+- map : returns a new stream that consists of the elements that were obtained by applying a function
+ (i.e. transforming each element).
+
+ Les opérations terminaux :
+ - count : retourne le nombre d'éléments dans le strem en long
+ - max / min : retourne le max/min en se basant sur le comparateur donné
+ - reduce : combine les valeurs du stream en une seule valeur (une valeur aggrégée)
+ - findFirst / findAny : renvoie le premier element du stream en tant qu'Optional
+ - anyMatch : Renvoie true si au moins un des éléments correspond au prédicat
+ - forEach : prend un consumer et l'applique à chaque élément du stream
+ - collect : renvoie une collections des valeurs présents dans le stream
+ - toArray : renvoie un tableau des éléments dans le stream
+
+ Les opérateurs (méthodes) comme filter, map, reduce, forEach, anyMatch et d'autres sont appelés higher-order functions
+  car ils acceptent d'autres fonctions en argument.

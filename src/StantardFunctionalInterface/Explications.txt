@@ -1,0 +1,19 @@
+Les interfaces fonctionnelles qui sont dans le package java.util.function peut être divisée en 5 groupes :
+- Des fonctions qui acceptent des arguments et qui produisent des résultats
+- Des opérateurs qui produisent des résultats du même type que leurs arguments
+- Prédicat qui accepte des arguments et renvoie des valeurs booléennes
+- Des suppliers qui n'acceptent rien et retourne des valeurs
+- Des consummers qui acceptent des arguments et ne renvoient pas de résultats
+
+Le nommage des fonctions dans java.util.function aide à déterminer ce qu'elles font à partir de leur préfixe :
+
+- Pour le nombre de paramètres acceptés par une opération : le préfixe Bi qui indique qu'une fonction, un prédicat
+ou un consummer accepte deux paramètres. Les opérateurs Unary et Binary indiquent un ou deux paramètres à un
+opérateur.
+- Le type des paramètres en input : les préfixes Double, Long, Int, et Obj indiquent le type de l'input. Par exemple
+l'interface IntPredicate représente une interface qui accepte une valeur Integer en input.
+- Le type du paramètre en sortie : les préfixes Double, ToLong, and ToInt indiquent les types
+
+
+Certaines interfaces fonctionnelles ont une combinaison de préfixes. Par exemple
+l'interface DoubleToIntFunction accepte une valeur Double et renvoie un Integer.

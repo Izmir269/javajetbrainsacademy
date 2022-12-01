@@ -1,0 +1,18 @@
+                                                    Map :
+
+map est une méthode d'une classe Stream qui prend une seule fonction comme paramètre.
+L'objectif principal de l'opération de mappage est d'appliquer cette fonction à chaque élément du stream et de
+renvoyer un stream résultant contenant le même nombre d'éléments.
+
+
+Les primitives comme Int, Double ont leur stream comme IntStream, LongStream, ou DoubleStream.
+Ils ont aussi la méthode map qui fait correspondre la valeur primitive avec une valeur du même type.
+Cependant c'est nécessaire d'avoir un moyen de map la valeur primirive à un objet : mapToObj
+
+
+                                                    flatMap :
+
+The map operation works great for streams of primitives and objects, but the input can also be a stream of collections.
+Par exemple, la méthode stream() de List<List<String>> retourne  Stream<List<String>>.
+It takes and applies a one-argument function in order to transform each stream element into a new stream and concatenates
+ these streams together.

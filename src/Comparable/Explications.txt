@@ -1,0 +1,11 @@
+Quand on a besoin de comparer des objets qui ne peuvent pas directement l'être, on utilise l'interface Comparable.
+ En utilisant la méthode compareTo()
+
+ On peut comparer des objets custom en se basant sur un ou plusieurs des champs.
+
+ It compares the current object with the object sent as a parameter. To implement it correctly we need to make
+ sure that the method returns:
+
+ A positive integer (for example, 1), if the current object is greater;
+ A negative integer (for example, -1), if the current object is less;
+ Zero, if they are equal.

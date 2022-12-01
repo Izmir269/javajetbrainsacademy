@@ -1,0 +1,16 @@
+Le comparator (classe Comparable) classique fonctionne pour des types classing comme les String, Dates...
+
+Par contre quand il s'agit d'objets custom, on doit définir nous-même la manière dont on veut les comparer.
+
+
+On va donc override la méthode compare et renvoyer 0 si y'a égalité, un nombre positive => le premier argument >
+deuxième. Negatif => premier plus petit que deuxième.
+
+
+Au lieu d'utiliser toute une classe pour définir la comparaison, on peut le faire via fonction lambda :
+Comparator<Message> dateComparator = (m1, m2) ->
+        m1.getCreated().compareTo(m2.getCreated());
+messages.sort(dateComparator);
+
+On peut aussi passer directement la lambda dans la fonction sort :
+messages.sort((m1, m2) -> m1.getCreated().compareTo(m2.getCreated()));

@@ -1,0 +1,21 @@
+Pour éviter les NPE (Null pointer exception), Java fournit la classe Optional qui est une alternative plus
+safe que faire une référence null.
+
+La classe Optional<T> représente la présence ou l'absence d'une valeur de type T. Un objet de cette peut être
+soit vide ou pas vide.
+
+- La méthode isPresent() check si un objet est vide ou pas. A partir de Java 11 on peut aussi appeler isEmpty()
+- La méthode ofNullable() est utilisée à la place de of() pour un créer un Optional si on ne sait pas si l'objet
+qui est passé sera nul ou pas(potentiellement nul). En cas d'objet nul, on crée automatiquement un Optional empty.
+- Obtenir une valeur d'un optional :
+    + get() ou depuis java 10 orElseThrow() : renvoie la valeur si présente, si non throw une exception
+    + orElse() : renvoie la valeur si présente, si non renvoie other(valeur par défaut pour éviter le null)
+    + orElseGet() : renvoie la valeur si présente, si non invoque other (un Supplier) et renvoie son résultat
+ String name = Optional
+         .ofNullable(nullableName)
+         .orElseGet(SomeClass::getDefaultResult);
+
+- There are also convenient methods that take functions as arguments and perform some actions on values
+ wrapped inside Optional:
+    + ifPresent()
+    + ifPresentOrElse()

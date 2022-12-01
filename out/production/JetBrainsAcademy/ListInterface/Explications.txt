@@ -1,0 +1,23 @@
+Les listes sont un type de données proches des tableaux, sauf que leur taille peut être modifiée dynamiquement
+alors que la taille d'un tableau est retreinte.
+
+List<E> est une interface avec un type de données abstrait. Elle étend l'interface Collecion<E> donc acquiert
+les méthodes de cette interface et ajoute ses méthodes spécifiques :
+- E set(int index, E element) : remplace l'élément à l'index donné par celui renseigné et renvoie en cas e succès
+l'élément remplacé.
+-E get(int index) : renvoie l'élément qui est à l'index donné.
+- int indexOf(Object obj) : renvoie l'index de l'élément renseigné. -1 si absent
+- int lastIndexOf(Object obj) : renvoie la dernière occurrence de l'élément renseigné. -1 si non existant
+- List<E> subList(int fromIndex, int toIndex) : renvoie une sous-liste de l'index fromIndex inclus jusqu'à
+l'index toIndex exclus.
+
+
+Les méthodes ci-dessus présument qu'on a une liste ordonnée
+On ne peut pas créer une instance de l'interface List mais on peut créer une instance de l'une de ses
+implémentations ArrayList or LinkedList ou une liste immutable.
+
+De manière générale, une implementation LinkedList perd face à l'ArrayList en termes de consommation de mémoire
+et vitesse des opérations. Mais ça dépend du problème qu'on résout.
+
+
+

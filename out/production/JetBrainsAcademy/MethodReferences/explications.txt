@@ -1,0 +1,10 @@
+Les expressions lambda permettent d'utiliser du code comme données et le passer dans les arguments
+d'une méthode.
+Un autre moyen est d'utilier les method references. Elles sont souvent plus lisibles que les expressions
+lambda correspondantes. Elles te forcent également à décomposer le programme en un ensemble de méthodes courtes
+avec une distinction claire des responsabilités.
+
+Par méthode référence, on veut dire une fonction qui se réfère à une méthode particulière via son nom et peut être
+invoquée quand on veut. La synthaxe de base ressemble à :
+                            objectOrClass :: methodName
+où objectOrClass peut être le nom d'une classe ou une instance particulière d'une classe.

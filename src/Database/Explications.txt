@@ -1,0 +1,37 @@
+Une base de données est une collection de données spécifiquement organisée pour une recherche et une
+récupération rapides traitées par un ordinateur.
+
+Contrairement à nous, les ordinateurs peuvent facilement comprendre le format binaire des données,
+mais qu'est-ce qui leur permet de le lire et de l'écrire correctement ? Il s'agit d'un programme
+appelé Database Management System, qui contrôle les données d'une base de données.
+
+Un système de gestion de base de données (SGBD) est un type de logiciel qui permet aux utilisateurs de définir,
+créer et contrôler des données.
+
+Le SGBD peut optimiser les requêtes et récupérer les données d'une base de données de manière optimale.
+C'est un médiateur entre l'utilisateur et la base de données, ce qui signifie que les utilisateurs peuvent
+travailler avec elle via l'interface du SGBD. En outre, cela peut également aider à en isoler les données.
+
+Un autre objectif de ce logiciel est d'aider les gens à travailler avec différentes bases de données sans
+exposer leurs différences réelles.
+
+Bien sûr, vous pouvez conserver les fichiers localement, mais à mesure qu'ils augmentent en nombre, vous ne
+pourrez pas trouver les informations rapidement. Les bases de données fournissent des schémas
+et des métadonnées qui permettent une recherche rapide des données dont vous avez besoin.
+
+Un schéma décrit comment VOUS organisez les données. Les métadonnées contiennent des informations
+ structurelles et statistiques.
+
+ Il y a une autre bonne chose à propos des bases de données. Lorsqu'un fichier habituel est corrompu et ne peut
+ pas être ouvert, vous avez perdu vos données pour toujours. En utilisant le SGBD à la place, vous pouvez faire
+  des sauvegardes puis restaurer les données pour continuer votre travail.
+
+  With databases you can:
+
+  Store, retrieve and update data;
+  Get metadata;
+  Access database remotely;
+  Restrict accesses to data;
+  Make concurrent updates;
+  Recover to some point in time;
+  Check the rules for data consistency automatically.

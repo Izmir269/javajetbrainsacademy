@@ -1,0 +1,11 @@
+- Le challenge est de réduire les éléments d'une collection en un seul élément.
+- The example of such a problem is finding a bank account with the maximum amount of money among the collection of accounts
+ or reducing account transaction values to the total amount of transferred money.
+ - Java Stream API fournit plusieurs opérateurs terminaux qui répondent à ce besoin.
+
+
+ 1) La méthode reduce : permet de combiner les éléments d'un stream en une seule valeur. La méthode accepte deux arguments
+ (accumulator), le premier est le résultat partiel de l'accumulation et le second est la valeur suivante.
+ à chaque itération la méthode renvoie un résultat qui est assignée au premier argument
+
+ 2) On a des méthodes de reduction plus spécifiques comme sum, min, max, average...

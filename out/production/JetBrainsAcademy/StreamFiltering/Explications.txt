@@ -1,0 +1,1 @@
+Filtrer permet de n'obtenir que les éléments satisfaisant une condition donnée.

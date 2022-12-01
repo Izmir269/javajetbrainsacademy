@@ -1,0 +1,22 @@
+Java 8 nous a donné un nouvel outil appelé Stream API qui fournit une approche fonctionnelle du traitement des
+collections d'objets.
+
+Dans un sens, un flux peut nous rappeler une collection. Mais il ne stocke pas réellement d'éléments. Au lieu de cela,
+il transmet des éléments d'une source telle qu'une collection, a generator function, un fichier, un canal d'Entrée/Sortie,
+un autre flux ou autre chose, puis traite les éléments en utilisant une séquence d'opérations prédéfinies combinées en
+un seul pipeline.
+
+3 étapes pour travailler sur un stream :
+- Obtenir le stream à partir d'une source
+- Appliquer des opérations intermédiaires sur le stream pour transformer les données
+- Appliquer une opération finale pour fournir un résultat
+
+Toutes les classes associées aux Streams se trouvent dans le package java.util.stream. Il existe plusieurs classes de Stream
+courantes : Stream<T>, IntStream, LongStream et DoubleStream. Alors que le flux générique Stream <T> fonctionne avec des types
+de référence, les autres fonctionnent avec les types primitifs correspondants.
+
+- Les opérations intermédiaires ne sont pas évaluées immédiatement lors de l'appel. Ils renvoient simplement de nouveaux flux
+pour appeler les opérations suivantes sur eux. De telles opérations sont dites "lazy" car elles ne font en réalité
+ rien d'utile.
+- Les opérations terminales commencent toutes les évaluations avec le flux pour produire un résultat ou pour créer
+un effet secondaire. Comme nous l'avons mentionné précédemment, un flux n'a toujours qu'une seule opération terminale.

@@ -1,0 +1,25 @@
+Une annotation est un instrument Java spécial qui fournit des informations sur un programme.
+Pour leur donner une définition plus formelle, les annotations sont une forme de métadonnées,
+ce qui signifie qu'elles ne font pas partie du programme lui-même.
+
+Vous pouvez marquer des classes, des méthodes, des champs, des variables et d'autres parties d'un programme avec des annotations.
+ Lorsque vous le faites, les annotations fournissent des informations pour le compilateur, pour certains outils de développement
+  ou pour les frameworks et les bibliothèques en runtime.
+
+  But first, let's discuss the three main built-in annotations that were presented to the world in Java 5:
+
+  @Deprecated is a simple annotation which means that the marked method (or class, field, and so on) is deprecated, that is, obsolete and should no longer be used. This annotation causes a compile warning if the code is used.
+  @Deprecated
+  public void oldMethod() {
+      System.out.println("Hello!");
+  }
+  @SuppressWarnings commands the compiler to disable some compile-time warnings. You specify in parameters which warnings you don't want to see, for example:
+  @SuppressWarnings("unused")
+  public void printHello() {
+      System.out.println("Hello!");
+  }
+  Imagine you created a method printHello but didn't use it. The compiler doesn't like unused methods, but with the @SuppressWarnings("unused") annotation where "unused" is a parameter, you can disable that compile warning. This annotation can be applied to classes, methods, fields, local variables, and other parts of the program.
+
+  @Override marks a method that overrides a superclass method. This annotation can only be applied to methods. We will consider it in detail in a separate topic about overriding methods.
+
+  Certaines annotations ont une valeur par défaut et certaines non

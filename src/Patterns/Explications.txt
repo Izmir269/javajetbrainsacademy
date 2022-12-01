@@ -1,0 +1,32 @@
+D'un point de vue technique, votre code est bien conçu si vous êtes d'accord avec les déclarations suivantes :
+
+- Lorsque vous apportez une petite modification, cela ne produit pas d'effet d'entraînement ailleurs dans le code.
+- Votre code est facilement réutilisable
+- Facilement maintenable après livraison
+
+
+- Dans le développement d'applications, la conception du code doit correspondre au problème et être suffisamment
+générale pour répondre à toutes les exigences qui pourraient survenir à l'avenir. Chacun essaie de trouver des
+solutions plus élégantes, adaptées et flexibles qui peuvent également être réutilisées.
+
+- Les design patterns sont des solutions répétables à des problèmes communs que les développeurs font face.
+une architecture objet-orienté bien structuré utilise énormement les design patterns.
+
+Les patterns sont indépendants au langage choisi, même s'ils peuvent être implémentés différemment en fonction
+du langage
+
+- Here is a list of quite convincing reasons to get familiar with design patterns:
+
+    + Patterns provide tested and commonly used solution templates for design problems; you don't have to invent
+    anything!
+    + Patterns improve flexibility and maintainability of object-oriented systems, which makes it easier to react
+     to changing requirements.
+    + Patterns can speed up the development process.
+    + Patterns are a universal vocabulary that allows developers to describe a program design using a set of
+    well-known identifiable concepts.
+    + Patterns are often used in standard libraries and frameworks.
+    + You can find patterns in the source codes of many applications and quickly understand how they work,
+    instead of reading thousands of lines of code.
+
+Creational, Structural and Behavioral design patterns.
+

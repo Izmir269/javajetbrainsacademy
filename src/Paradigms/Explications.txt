@@ -1,0 +1,16 @@
+Different programming tasks can be solved in different ways: you might need to write a function, or create a
+separate class with methods, and so on. All such variants are combined into different programming approaches,
+which are also called paradigms.
+
+Différentes tâches peuvent être résolues de différentes manières : ecrire une fonction, créer une classe séparée
+avec des méthodes..etc
+Tous ces variants combinés ont conduit à différentes approches appelées paradigmes.
+Deux principaux :
+- La programmation impérative : regroupe la programmation Procédurale(C, Java, C++, ColdFusion, Pascal),
+OOP(Ruby, Java, C++, Python, Simula (the first OOP language), Smalltalk, Visual Basic .NET, Objective-C.),
+Parallel processing(diminue le temps d'éxécution en partageant les instructions à travers plusieurs processeurs :
+NESL (one of the oldest) and C / C ++ (also supported due to some library functions).)
+
+- La programmation déclarative : regroupe la programmation logique(Prolog, Answer Set Programming (ASP), and Datalog.),
+ fonctionnelle(JavaScript, Haskell, Scala, Erlang, Lisp, ML, Clojure, OCaml, Common Lisp, and F#),
+ base de données

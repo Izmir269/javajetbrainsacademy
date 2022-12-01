@@ -1,0 +1,12 @@
+- CREATE DATABASE students; => créer une bdd nommé students
+
+- CREATE TABLE students_info (
+      student_id INT,
+      name VARCHAR(30),
+      surname VARCHAR(30),
+      age INT
+  ); => créer une table students_info
+
+- DROP DATABASE students; => supprimer une bdd et toutes ses tables.
+
+- DROP TABLE students_info;  => Supprimer une table et toutes ses données

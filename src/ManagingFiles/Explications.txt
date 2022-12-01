@@ -1,0 +1,3 @@
+La librairie java.io.File représente un path abstrait à un fichier ou un répertoire qui n'existe peut-être pas.
+ A part traverser l'hierarchie de fichiers, on peut également créer, supprimer, renommer des fichiers.
+ On peut utiliser différentes méthodes adaptées à un OS en particulier

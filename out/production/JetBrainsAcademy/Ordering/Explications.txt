@@ -1,0 +1,26 @@
+1) To compare two strings for the less or equal relation, do it step by step:
+
+- Compare each word letter by letter from the first position. When two letters in the same position differ, the order
+of words matches the order of these letters: cord < core.
+
+- When there are no letters left in one of the words, the prefix word is always less than or equal to the other one,
+ so ball < ballet.
+
+
+ 2) Pour comparer les dates, on le fait étape par étape :
+ Almost nothing changes when you add time to date. You compare two timestamps step by step:
+
+ by year
+ by month
+ by day
+ by hour
+ by minute
+ by second
+ ...
+
+ The ordering has several applications based on its useful properties, so, looking at this sequence, we can:
+
+ compress the information (say, we have elements from 1 to 20)
+ look for elements faster (it's easy to find elements in it and answer what elements are not present)
+ analyze the structure of the data (by the glimpse we can find the minimum and maximum elements in the sequence)
+ You can find applications of ordering in compression algorithms, search engines, databases, analytics tools, and many other programs.

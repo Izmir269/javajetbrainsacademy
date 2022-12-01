@@ -1,0 +1,36 @@
+                                            1) Le pourquoi/histoire
+Java est principalement un language orienté objet. Ce qui signifie que ça supporte les classes, les méthodes, les
+champs et d'autres concepts de ce paradigme.
+Dans ce ca de figure, les méthodes sont le moyen principal de représenter le comportement des objets. On peut
+écrire n'importe quel code à l'intérieur d'une méthode et invoquer cette méthode dans d'autres parts du
+programme en utilisant le nom de la méthode.
+Cette approche permet aux développeurs de créer des programmes très structurées et lisibles.
+Cependant, dans quelques cas ce n'est pas assez et on doit utiliser d'autre moyens de représenter le comportement
+des objets autres que par les méthodes.
+                                        2) Programmation fonctionnelle
+C'est un autre paradigme qui utilise les fonctions comme moyens de résoudre les problèmes.
+Comme les méthodes, les fonctions sont utilisées pour découper un code en petites parties.
+Mais contrairement aux méthodes, les fonctions peuvent se comporter comme des objets Java dans le sens
+où elles peuvent être passées, retournées à ou dans une méthode.
+
+                                        3) Lambda Expression
+Une expression Lambda est une fonction qui n'est pas associé à un nom(Fonction anonyme) mais qui peut être assignée
+à une variable.
+La forme générale est : (paramètres) -> { corps de la fonction };
+Comme les objets, une expression lambda a toujours un type, ici on en verra deux : Function et BiFunction
+                                         4) Exemple
+Considérons une expression lambda qui prend deux paramètres et les multiplient :
+BiFunction<Integer, Integer, Integer> mult = (x, y) -> x * y;
+                                          5) Invocation expression lambda
+On peut invoquer une expression lambda comme une méthode normale en lui passant les arguments
+
+                                          6) higher-order fonction
+ In functional programming theory, a function that accepts or returns another function is called a higher-order
+  function. In terms of Java, we're talking about methods or functions which take / return Function<T, R>,
+  BiFunction<T, U, R> or other types
+                                          7) Closure
+  Une autre astuce importante avec les expressions lambda est la possibilité de capturer des valeurs à partir
+   d'un contexte où le lambda est défini et d'utiliser les valeurs dans le corps. Cette technique s'appelle
+   Closure.
+   Capturing is possible only if a context variable has the final keyword or it's effectively final, i.e.
+   the variable isn't changed in further code. Otherwise, an error happens.
