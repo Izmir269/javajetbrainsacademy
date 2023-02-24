@@ -1,0 +1,4 @@
+1) Les String en Java sont immutables => Une fois un String crée on ne peut pas le changer.
+Donc pour le changer il faut crée un autre objet... => bad performances
+
+StringBuilder permet de créer des objets string mutables.

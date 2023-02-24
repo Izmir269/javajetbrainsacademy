@@ -1,0 +1,9 @@
+Imaginons qu'on a une classe Superhero. Cependant un Superhero a besoin d'items spéciaux come un bouclier,
+un marteau..etc
+Comment on organise la classe qui décrit l'équipement du Superhero ? Comment on peut faire que seulement la
+classe SuperHero peut l'utiliser ? => La réponse est les nested classes.
+Ces derniers nous aident à organiser logiquement les classes et augmenter l'encapsulation de notre code.
+
+Dans ce cas la classe Superhero est appelée outer class et les nested classes sont des membres de l'outer class
+
+Les inner classes sont des non-static nested classes

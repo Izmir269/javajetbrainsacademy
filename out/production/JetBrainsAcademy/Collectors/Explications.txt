@@ -1,0 +1,26 @@
+Pour collecter des éléments dans une List ou un Set, on a l'opération terminal collect qui permet à la fois de récupérer
+tous les éléments ou de les récupérer en valeur unique comme le fait reduce
+
+- collect est un opérateur terminal de reduction qui accepte un objet de type Collector
+
+- La classe Collectors contient des méthodes statiques qui retournent un Collector et implémentent des
+fonctionnalités pour accumuler les élements d'un stream, réduire en seul string...etc
+
+
+- Les méthodes de la classe Collectors qui génèrent une seule valeur :
+
+summingInt, summingLong, summingDouble;
+
+averagingInt, averagingLong, averagingDouble;
+
+maxBy, minBy;
+
+counting.
+
+- Pour des calculs plus complexes on peut utiliser Collectors.reducing, qui fonctionne comme reduce
+C'est à dure accepter une fonction accumulatrice, ou une identity value + la fonction accumulatrice.
+Cependant, contrairement au reduce, on peut avoir aussi un mapper (identity value + mapper + fonction acc)
+Voir l'exemple dans le code
+
+Collectors.joining() is interesting
+
